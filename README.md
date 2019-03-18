@@ -1,0 +1,1 @@
+A sample project for the Stanford Core NLP libraries.
