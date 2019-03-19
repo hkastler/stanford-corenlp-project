@@ -1,0 +1,17 @@
+version: '3'
+
+networks:
+  corenlpnetwork:
+    driver: bridge
+
+services:
+ corenlp:
+  image: frnkenstien/corenlp 
+  ports:
+    - "9010:9000"
+  networks:
+    - corenlpnetwork
+  hostname: "corenlp"
+
+ 
+
