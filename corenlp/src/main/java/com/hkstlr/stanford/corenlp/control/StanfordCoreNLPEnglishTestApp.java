@@ -13,8 +13,7 @@ public class StanfordCoreNLPEnglishTestApp {
         File inputFile = new File(StanfordCoreNLPEnglishTestApp.class.getClassLoader().getResource("sample-english.txt").getFile());
         File propsFile = new File(StanfordCoreNLPEnglishTestApp.class.getClassLoader().getResource("english.properties").getFile());
         String[] englishArgs = new String[] { "-file", inputFile.getAbsolutePath(),
-        "-outputFormat","json",
-         "-props" , propsFile.getAbsolutePath() };
+        "-props" , propsFile.getAbsolutePath() };
         StanfordCoreNLP.main(englishArgs);
     }
 }
