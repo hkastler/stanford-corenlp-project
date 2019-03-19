@@ -12,7 +12,7 @@ public class StanfordCoreNLPSentimentPipelineMain {
         File inputFile = new File(StanfordCoreNLPSentimentPipelineMain.class.getClassLoader()
                 .getResource("sample-english.txt").getFile());
         
-        args = new String[] { "-file", inputFile.getAbsolutePath() ,"-output", "root"};
+        args = new String[] { "-file", inputFile.getAbsolutePath() ,"-output", "root,probabilities,vectors,pennTrees"};
         
         SentimentPipeline.main(args);
     }
